@@ -1,0 +1,262 @@
+/*button {
+    width: 150px;
+    height: 50px;
+    margin: 50px;
+    background-image: url(
+"http://127.0.0.1:5500/images/clown1.jpg"); coppy url (image link address) by placing image in html and right click and add
+    background-size:contain;
+}
+
+button:hover {
+    background-image: url(
+"https://media.geeksforgeeks.org/wp-content/uploads/20190506164011/logo3.png");
+background-image: image(images/test_button);
+}
+
+*/
+
+
+
+button {
+    background-color: rgb(205, 141, 251);
+    padding: 10px 30px;
+    cursor: pointer;
+    border: 5px solid rgb(118, 140, 230);
+    transition: box-shadow 0.5s;
+    color: white;
+}
+button:hover {
+    
+    background-color: rgb(251, 141, 166);
+    border-color: rgb(223, 58, 97);
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.2);/*glow maybe?*/
+    
+}
+a:visited {
+    color: rgb(248, 74, 184);
+    
+}
+a:hover {
+    color: rgb(116, 109, 218);
+    cursor: pointer;
+    
+}
+
+a{
+    color: rgb(0, 0, 0);
+}
+
+nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    grid-gap: 10px;
+    padding: 30px;
+    background-color: #fdc4da;
+}
+
+
+header, h2{
+    font-family: "Alegreya";/*heading font */
+    /*color: rgb(1, 107, 96);*/
+
+}
+
+
+
+footer { 
+    grid-area: footer;
+    background: fdc4da;
+    padding: 20px;
+    background-color: #fdc4da;
+
+}
+
+p{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-family: "Corben";/*paragraphs font*/
+    line-height: 1.6;
+}
+
+i{
+    font-style: italic;
+}
+
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    font-family: Alegreya;
+
+}
+
+h2{
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.zoom {
+    transition: transform .2s; 
+  }
+  
+  .zoom:hover {
+    transform: scale(1.1); 
+  }
+
+
+.home_grid {/*Top grid*/
+    display: grid;
+    grid-template-columns: 300px 500px;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 20px 300px;/*length of rows*/
+    grid-gap: 50px;/*in between gap*/
+    padding: 50px;  /*space against sides*/  
+    justify-content: center;
+
+}
+
+.home_grid2 {/*Bottom grid*/
+    display: grid;/*bottom grid*/
+    grid-template-columns: 500px 500px;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 400px;/*length of rows*/
+    grid-gap: 40px;/*in between gap*/
+    padding: 50px;  /*space against sides*/    
+    justify-content: center;
+
+}
+
+.home_panel {
+    background: rgba(241, 11, 115, 0.1);
+    grid-template-columns: 200px 200px;
+    text-align: left;
+    tab-size: 4;
+    
+    
+}
+.star_image{
+	width: 300px;
+	height: 300px;
+	object-fit:contain;
+}
+
+
+.clown_image{
+    border: #fdc4da;
+
+}
+
+.clown_grid {
+    display: grid;/*bottom grid*/
+    grid-template-columns: 250px 250px 250px 250px ;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 300px 300px;/*length of rows*/
+    grid-gap: 30px;/*in between gap*/
+    padding: 50px;  /*space against sides*/    
+
+}
+
+.clown_grid2 {/*Top grid*/
+    display: grid;
+    grid-template-columns: 500px 500px;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 20px 400px;/*length of rows*/
+    grid-gap: 50px;/*in between gap*/
+    padding: 50px;  /*space against sides*/  
+    justify-content: center;
+
+}
+
+.clown_panel {
+    background: rgba(191, 143, 241, 0.1);
+    grid-template-columns: 200px 200px;
+    text-align: center;
+    
+}
+.art_panel {
+    background: rgba(249, 165, 200, 0.297);
+    grid-template-columns: 500px 500px;
+    text-align: center;
+}
+
+
+.art_grid {/*Top grid*/
+    display: grid;
+    grid-template-columns: 250px 250px 500px;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 200px 200px 150px;/*length of rows*/
+    grid-gap: 30px;/*in between gap*/
+    padding: 50px;  /*space against sides*/    
+    justify-content: center;
+
+}
+
+.art_grid2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;/* changes size of each box,   put "number" px for exact size*/
+    grid-template-rows: 300px 300px;/*length of rows*/
+    grid-gap: 40px;/*in between gap*/
+    padding: 50px;  /*space against sides*/    
+    justify-content: center;
+
+}
+
+
+img{
+	width: 100%;
+	height: 100%;
+	object-fit:cover;
+}
+
+.container{
+    position: relative;
+    height: 750px;  /* layering text over image*/
+}
+
+.overlay_text {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  background-color: rgba(0, 0, 0, 0.5);/* 0.5 is opacity*/
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/*Carousel styling*/
+.slider{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+.slider img{
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.slider button{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 10px 15px;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.prev{
+    left: 0;
+}
+.next{
+    right: 0;
+}
+@keyframes fade {
+    from {opacity: .5}
+    to {opacity: 1}
+}
