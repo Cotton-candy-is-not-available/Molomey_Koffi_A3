@@ -113,7 +113,6 @@ h2{
     grid-gap: 50px;/*in between gap*/
     padding: 50px;  /*space against sides*/  
     justify-content: center;
-
 }
 
 .home_grid2 {/*Bottom grid*/
@@ -131,8 +130,7 @@ h2{
     grid-template-columns: 200px 200px;
     text-align: left;
     tab-size: 4;
-    
-    
+    padding: 10px;
 }
 .star_image{
 	width: 300px;
@@ -169,12 +167,15 @@ h2{
     background: rgba(191, 143, 241, 0.1);
     grid-template-columns: 200px 200px;
     text-align: center;
+    padding: 10px;
     
 }
 .art_panel {
     background: rgba(249, 165, 200, 0.297);
     grid-template-columns: 500px 500px;
     text-align: center;
+    padding: 10px;
+
 }
 
 
