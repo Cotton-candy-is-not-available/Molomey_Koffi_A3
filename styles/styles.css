@@ -182,7 +182,7 @@ h2{
 .art_grid {/*Top grid*/
     display: grid;
     grid-template-columns: 250px 250px 500px;/* changes size of each box,   put "number" px for exact size*/
-    grid-template-rows: 200px 200px 150px;/*length of rows*/
+    grid-template-rows: 300px 300px 150px;/*length of rows*/
     grid-gap: 30px;/*in between gap*/
     padding: 50px;  /*space against sides*/    
     justify-content: center;
